@@ -1,0 +1,25 @@
+# configs/config.yaml
+
+defaults:
+  - _self_
+
+data:
+  path: G:\ITI DataScience 9Months\mlops\mlopsproject\MlopsProject\data\raw\train.csv
+  target_column: Survived
+
+
+models:
+  logistic_regression:
+    _target_: sklearn.linear_model.LogisticRegression
+    max_iter: 1000
+    random_state: 42
+
+  random_forest:
+    _target_: sklearn.ensemble.RandomForestClassifier
+    n_estimators: 100
+    random_state: 42
+
+training:
+  test_size: 0.2
+  cv_folds: 5
+  save_path: models/
