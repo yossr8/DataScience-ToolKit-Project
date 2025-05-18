@@ -20,8 +20,8 @@ def main(cfg: DictConfig):
         models_cfg=cfg.models,
         training_cfg=cfg.training
     )
-
     print("Training Results:\n", results)
 
 if __name__ == "__main__":
+    print("Starting training...")
     main()
