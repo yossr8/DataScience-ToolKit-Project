@@ -1,0 +1,10 @@
+stages:
+  train_model:
+    cmd: python -m src.main
+    deps:
+    - src/
+    - configs/config.yaml
+    - data/raw/train.csv
+    outs:
+    - models/logistic_regression.pkl
+    - models/random_forest.pkl

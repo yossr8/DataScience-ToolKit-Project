@@ -1,6 +1,7 @@
 import pandas as pd
 import joblib
 import os 
+from typing import Tuple
 from sklearn.model_selection import train_test_split
 from sklearn.pipeline import Pipeline
 from sklearn.compose import ColumnTransformer
