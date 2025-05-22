@@ -7,7 +7,6 @@ data:
   path: G:\ITI DataScience 9Months\mlops\mlopsproject\MlopsProject\data\raw\train.csv
   target_column: Survived
 
-
 models:
   logistic_regression:
     _target_: sklearn.linear_model.LogisticRegression
