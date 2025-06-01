@@ -11,3 +11,6 @@ env.bak/
 *.sqlite3
 *.db
 .git
+.gitignore
+.dvc
+.dvcignore
