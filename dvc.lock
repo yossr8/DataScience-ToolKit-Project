@@ -1,0 +1,27 @@
+schema: '2.0'
+stages:
+  train_model:
+    cmd: python -m src.main
+    deps:
+    - path: configs/config.yaml
+      hash: md5
+      md5: 32fbad6192c38825b1f1273c573a51bc
+      size: 453
+    - path: data/raw/train.csv
+      hash: md5
+      md5: 2309cc5f04782ed9bb6016d9f4e381cf
+      size: 61194
+    - path: src/
+      hash: md5
+      md5: 182b12e7fbda1bb153e66af798356825.dir
+      size: 8494
+      nfiles: 10
+    outs:
+    - path: models/logistic_regression.pkl
+      hash: md5
+      md5: be85047f2146c439c50bf02cf0bb8edf
+      size: 4503
+    - path: models/random_forest.pkl
+      hash: md5
+      md5: 93644f906740641bf08776e3e218b47e
+      size: 2379032
